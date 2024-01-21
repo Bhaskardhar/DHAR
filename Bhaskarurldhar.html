@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            background-color: #add8e6;
+            text-align: center;
+            font-family: 'Arial Black', sans-serif;
+        }
+
+        #main-content {
+            padding: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        #choices {
+            margin-top: 20px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 28px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            background-color: #1e90ff;
+            transition: background-color 0.3s;
+        }
+
+        #result-text {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-content">
+        <!-- Your existing website content here -->
+        <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Happyyyy Birthdayyyy
+            Buliiii</p>
+        <img id="panda-image" src="https://media.tenor.com/bh9MAiCpL6wAAAAi/birthday-cake.gif" alt="Sticker">
+        <div id="choices">
+            <button class="thankyou" onclick="sayThankYou()">Thankkkkk Youuuuuu</button>
+        </div>
+    </div>
+
+    <script>
+        function sayThankYou() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Are you excited
+                    for your Surprise?</p>
+                <img id="excited-image" src="https://media.tenor.com/Ec-7QKfHZMgAAAAi/jump-up.gif" alt="Excited Sticker"
+                    style="max-width: 80%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="yes" onclick="excitedYes()">Yes</button>
+                    <button class="no" onclick="excitedNo()">No</button>
+                </div>
+            `;
+        }
+
+        function excitedYes() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Thoda Sans le
+                    lo</p>
+                <img class="happy-dance" src="https://media.tenor.com/ulSjgUp92WwAAAAi/happy-dance.gif"
+                    alt="Happy Dance Sticker" style="max-width: 80%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="okieeee" onclick="okieeee()">Okieeee</button>
+                </div>
+            `;
+        }
+
+        function excitedNo() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Dekh Toh le
+                    akbar</p>
+                <img class="sweet-zahraa" src="https://media.tenor.com/jZwdo-eAxoEAAAAi/sweet-zahraa-cute-zahraa.gif"
+                    alt="Sweet Zahraa Sticker" style="max-width: 80%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="okayyyy" onclick="okayyyy()">Okayyyy</button>
+                </div>
+            `;
+        }
+
+        function okayyyy() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Thoda Sans le
+                    lo</p>
+                <img class="happy-dance" src="https://media.tenor.com/ulSjgUp92WwAAAAi/happy-dance.gif"
+                    alt="Happy Dance Sticker" style="max-width: 80%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="okieeee" onclick="okieeee()">Okieeee</button>
+                </div>
+            `;
+        }
+
+        function okieeee() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Sorry! It's a
+                    physical thing. You have to meet me</p>
+                <img class="ice-family" src="https://media.tenor.com/CootUhcpgfYAAAAi/ice-family.gif"
+                    alt="Ice Family Sticker" style="max-width: 50%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="thik-h" onclick="thikH()">Thik h</button>
+                </div>
+            `;
+        }
+
+        function thikH() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Would you like
+                    to go out on a date with me tomorrow?</p>
+                <img class="erm-fingers" src="https://media.tenor.com/SFy5Za0DyMEAAAAi/erm-fingers.gif"
+                    alt="Erm Fingers Sticker" style="max-width: 50%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="sorry" onclick="sorry()">Sorry! I'm Busy Tomorrow</button>
+                    <button class="yessss" onclick="yessss()">Yessss</button>
+                </div>
+            `;
+        }
+
+        function sorry() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Its OKAY</p>
+                <img class="crying-sobbing" src="https://media.tenor.com/3VM2_MnIbNgAAAAi/crying-sobbing.gif"
+                    alt="Crying Sobbing Sticker" style="max-width: 50%; height: auto; margin: 20px 0;">
+            `;
+        }
+
+        function yessss() {
+            document.getElementById('main-content').innerHTML = `
+                <p style="font-size: 32px; margin-top: 20px; color: white; text-shadow: 3px 3px 6px #000;">Lets fix the
+                    Time</p>
+                <img class="yes" src="https://media.tenor.com/Bj48ngeLwUkAAAAi/yes.gif" alt="Yes Sticker"
+                    style="max-width: 50%; height: auto; margin: 20px 0;">
+                <div id="choices">
+                    <button class="message-you" onclick="messageYou()">I will message You</button>
+                </div>
+            `;
+        }
+
+        function messageYou() {
+            document.getElementById('main-content').innerHTML = `
+                <img class="line-sticker" src="https://media.tenor.com/nu9XqB4pQGsAAAAi/line-sticker-thank-you-sticker.gif"
+                    alt="Line Sticker" style="max-width: 100%; height: auto; margin: 20px 0;">
+            `;
+        }
+    </script>
+
+</body>
+
+</html>
